@@ -52,7 +52,7 @@ function addNewItem() {
       toDoText = document.querySelectorAll('.todo');
       const textArea = toDoText[numberIndex];
       textArea.innerText = itemText;
-      toDoItems.push(new ToDoItem(itemText, false, numberIndex));
+      toDoItems.push(new ToDoItem(itemText, false, numberIndex + 1));
       localStorage.setItem('toDoList', JSON.stringify(toDoItems));
       toDoDivsAll = document.querySelectorAll('.todo-item');
       numberIndex = toDoDivsAll.length;

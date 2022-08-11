@@ -23,7 +23,7 @@ function sortToDo(fieldId) {
   getCurrent();
   const unsortedItems = getStatus();
   for (let i = fieldId; i < unsortedItems.length; i += 1) {
-    unsortedItems[i].index = i;
+    unsortedItems[i].index = i + 1;
     allDivs[i].setAttribute('data-id', i);
     checkBtn[i].setAttribute('data-id', i);
     checkMark[i].setAttribute('data-id', i);
