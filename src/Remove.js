@@ -24,13 +24,13 @@ function sortToDo(fieldId) {
   const unsortedItems = getStatus();
   for (let i = fieldId; i < unsortedItems.length; i += 1) {
     unsortedItems[i].index = i + 1;
-    allDivs[i].setAttribute('data-id', i);
-    checkBtn[i].setAttribute('data-id', i);
-    checkMark[i].setAttribute('data-id', i);
-    dotsIcon[i].setAttribute('data-id', i);
-    trashIcon[i].setAttribute('data-id', i);
-    label[i].setAttribute('for', i);
-    textFields[i].setAttribute('id', i);
+    allDivs[i].setAttribute('data-id', i + 1);
+    checkBtn[i].setAttribute('data-id', i + 1);
+    checkMark[i].setAttribute('data-id', i + 1);
+    dotsIcon[i].setAttribute('data-id', i + 1);
+    trashIcon[i].setAttribute('data-id', i + 1);
+    label[i].setAttribute('for', i + 1);
+    textFields[i].setAttribute('id', i + 1);
   }
   localStorage.setItem('toDoList', JSON.stringify(unsortedItems));
   getStatus();
@@ -56,7 +56,7 @@ function editToDo(textFieldsLocal) {
       trashIcon.addEventListener('mousedown', () => {
         const storedItems = getStatus();
         listItem.remove();
-        const str = storedItems.filter((storedItems) => storedItems.index !== fieldId);
+        const str = storedItems.filter((storedItems) => storedItems.index !== fieldId + 1);
         localStorage.setItem('toDoList', JSON.stringify(str));
         sortToDo(fieldId);
         showItems();
