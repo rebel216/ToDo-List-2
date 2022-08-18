@@ -13,8 +13,6 @@ describe('Clear all completed test', () => {
     expect(createCompleted()).toBe(2);
   });
 
-
-
   test('There are no items in the DOM ? test', () => {
     expect(btnClear()[0]).toBe(0);
   });
@@ -33,6 +31,4 @@ describe('Clear all completed test', () => {
   test('Is 2nd item cpmleted ? test', () => {
     expect(checkedItem()[1].completed).toBe(true);
   });
-
- 
 });
