@@ -18,7 +18,7 @@
 To access and change the code on your computer (using GIT):
 > Note: if you don't use git, you can download the ZIP of this repository by clicking on the "Code" button above the files list.
 ### Setup
-- Open the repository [link](https://github.com/rebel216/To-Do-List).
+- Open the repository [link](https://github.com/rebel216/ToDo-List-2).
 - Click on the "Code" button, above the files list.
 - Select one of the three options to copy the URL: HTTPS, SSH key and GitHub CLI.
 - Open the Terminal in the directory you want to copy the project.
